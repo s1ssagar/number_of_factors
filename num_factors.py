@@ -5,10 +5,10 @@ def factors(num):
     num_of_fac = []
     # A number has factors only upto its Sqrt
     max_fac = int(math.sqrt(num)+1)
-    for x in range(1, max_fac+1):
+    for x in xrange(1, max_fac+1):
         count = 0
         if num % x == 0:
-            for y in range(1, x):
+            for y in xrange(1, x):
                 if x % y == 0:
                     count += 1
                     if count > 1:
